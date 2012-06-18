@@ -1,0 +1,91 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:200,400&subset=latin,latin-ext);
+
+html,body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Dosis', sans-serif;
+}
+
+.metrocanvas {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    min-width: 160px;
+}
+
+.metrocanvas.pattern1 {
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 52%, #7db9e8 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(52%,#2989d8), color-stop(100%,#7db9e8)); /* Chrome,Safari4+
+*/
+    background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 52%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #1e5799 0%,#2989d8 52%,#7db9e8 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #1e5799 0%,#2989d8 52%,#7db9e8 100%); /* IE10+ */
+    background: linear-gradient(top,  #1e5799 0%,#2989d8 52%,#7db9e8 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+.metrocanvas .area.threecol {
+    width: 470px;
+}
+
+.metrocanvas .area.threerows {
+    height: 470px;
+}
+
+.metrocanvas .area.twocol {
+    width: 310px;
+}
+
+.metrocanvas .area.tworows {
+    height: 310px;
+}
+
+.metrocanvas .area {
+    float: left;
+}
+
+.metrocanvas .area.half {
+    width: 50%;
+}
+
+.metrocanvas .area.third {
+    width: 33.33%;
+}
+
+.metrocanvas .area .metrobox {
+    width: 130px;
+    height: 130px;
+    float: left;
+    background-color: #bfd255;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    -webkit-transition: background-color .4s linear;  
+    -moz-transition: background-color .4s linear;  
+    -o-transition: background-color .4s linear;  
+    -ms-transition: background-color .4s linear;  
+    transition: background-color .4s linear; 
+}
+
+.metrocanvas .area .metrobox:hover {
+    background-color: #ffffff;
+}
+
+@-webkit-keyframes shake {
+    from {
+        -webkit-transform: rotateY(0deg);
+    }
+    to { 
+        -webkit-transform: rotateY(360deg);
+    }
+}
+
+.metrocanvas .area .metrobox:active {
+    -webkit-animation: shake 1s 1 linear;
+}
+
+.metrocanvas .area .metrobox.double {
+    width: 285px;
+}
